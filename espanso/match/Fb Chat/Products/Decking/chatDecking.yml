@@ -1,0 +1,60 @@
+matches:
+  # Welcome Text START
+
+  # Decking Boards Welcome
+  - trigger: "wcmdk "
+    replace: |-
+      3rd Generation Boards (Round Holes)
+
+      ${{priceDeckingPerBoard}} / board + GST
+      140 * 22 * 5400mm
+      
+      6 Colours available:
+        * Peach
+        * Sandalwood
+        * Mahogany
+        * Jade
+        * Camel
+        * Charcoal
+      
+      25 Year Warranty
+      
+      We also have metal decking clips and angle trims.
+
+      {{addressTextFull}}
+
+      We have display model here for check out and pick up. Samples are also available at our warehouse. NO BOOKING NEEDED.
+
+  # For people who need installtion
+
+  - trigger: "installdk "
+    replace: |-
+      For installtion, please send me your:
+      * Contact Number
+      * Install Suburb / Address
+      * Estimate Install Area
+      * Photos of Install Area (If Available)
+
+      An installer will contact you to provide a quote for your project soon.
+
+  - trigger: "sampledk "
+    replace: |-
+      If you would like us to post samples to your address, please send:
+      
+      * Estamate number of boards / install area size.
+      * Install Suburb / address.
+      * pick up (from Milperra) or requires delivery.
+      * Prefered color(s)
+      * Full name / Company name, contact number, email address
+      * Postage address for sample.
+
+      Thank you.
+
+  - trigger: "dkclip "
+    replace: |-
+      Metal Decking Clips : ${{priceDeckingClip}}/bag (20 piece per bag). (Roughly 1 bag / sqm)
+
+      Metal Decking Clips (Start & End): ${{priceDeckingClipStart}}/bag (20 piece per bag). (Depend on construction)
+
+  - trigger: "dkedge "
+    replace: "Decking Angle Trims: ${{priceDeckingAngle}}/piece (2200 x 60 x 60)"

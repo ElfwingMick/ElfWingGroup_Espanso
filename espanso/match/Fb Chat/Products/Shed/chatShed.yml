@@ -1,0 +1,35 @@
+matches:
+  # Welcome Text START
+
+  # Shed Welcome General
+  - trigger: "wcmshed "
+    replace: |-
+      We have multiple shed sizes Available, please refer to price list below.
+      
+      Display models available at our showroom.
+
+      Pick up and Delivery both available.
+
+      {{addressTextFull}}
+
+      {{deliveryTextSyd}}
+
+  - trigger: "avashed "
+    replace: |-
+      This exact model will be back in stock next week.
+
+      We also have multiple other sizes avaialble, please refer to price list below.
+      
+      Display models available at our showroom.
+
+      Pick up and Delivery both available. You can also place a pre-order now.
+
+      {{addressTextFull}}
+
+      {{deliveryTextSyd}}
+
+  - trigger: "installshed "
+    replace: |-
+      All Sheds included a detailed instruction manual booklet for installation.
+
+      All parts, including the screw bags, are clearly labeled allowing for easier to following the manual.

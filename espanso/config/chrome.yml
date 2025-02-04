@@ -1,0 +1,4 @@
+filter_class: "(Chrome|MobileSMS)"
+
+extra_includes:
+  - "../match/Fb Chat/Global/Fee_Calculations/_macos.yml"

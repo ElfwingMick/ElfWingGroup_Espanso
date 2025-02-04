@@ -1,0 +1,15 @@
+global_vars:
+  - name: "cardSurchargePercent"
+    type: "echo"
+    params:
+      echo: "3"
+
+  - name: "dlvFeeWoll"
+    type: "echo"
+    params:
+      echo: "20"
+
+  - name: "dlvFeeCC"
+    type: "echo"
+    parmas:
+      echo: "40"

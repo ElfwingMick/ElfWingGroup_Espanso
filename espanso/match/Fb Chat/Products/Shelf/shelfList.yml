@@ -1,0 +1,149 @@
+global_vars:
+  - name: "generalShelfBlack"
+    type: match
+    params:
+      trigger: "_generalslfb"
+
+  - name: "generalShelfGrey"
+    type: match
+    params:
+      trigger: "_generalslfg"
+
+  - name: "generalShelfCommercial"
+    type: match
+    params:
+      trigger: "_generalslfC"
+
+  - name: "generalBench"
+    type: match
+    params:
+      trigger: "_generalbch"
+
+  - name: "slfOtherSize"
+    type: match
+    params:
+      trigger: "_slfOtherSize"
+
+  - name: "listShelfHorizontal"
+    type: match
+    params:
+      trigger: "_listShelfHorizontal"
+
+  - name: "listShelfVertical"
+    type: match
+    params:
+      trigger: "_listShelfVertical"
+
+  - name: "listBench"
+    type: match
+    params:
+      trigger: "_listBench"
+
+  - name: "listBench_f"
+    type: match
+    params:
+      trigger: "listbch "
+
+  # Not in Use
+  - name: "listShelfStd"
+    type: match
+    params:
+      trigger: "_listShelfstd"
+
+  - name: "listShelfHd"
+    type: match
+    params:
+      trigger: "_listShelfhd"
+
+matches:
+
+  - trigger: "_slfOtherSize"
+    replace: |-
+      We also have:
+      * Length: 1.5m / 2m (or longer by extension)
+      * Height: 2m / 2.4m / 1.8m
+      * Commercial 300Kg/Level 2m / 2.4m Wide
+      * 0.9m Tall Workbench
+      * Extra levels can be added.
+
+  - trigger: "_generalslfb"
+    replace: |-
+      2m * 2m * 0.6m ${{priceShelfBlk2_2}}
+      2.4m(H) * 2m * 0.6m ${{priceShelfBlk24_2}}
+
+      {{slfOtherSize}}
+
+  - trigger: "_generalslfg"
+    replace: |-
+      2.0m(H)*2.0m(L)*0.6m(W) ${{priceShelfBlk2_2}} (Grey or Blue Uprights)
+      
+      {{slfOtherSize}}
+
+  - trigger: "_generalslfC"
+    replace: |-
+      Commercial 300kg/level Shelves: 
+      2.0m(H)*2.0m(L)*0.6m(W) ${{priceShelfBluOrgHD}} (Orange Levels, Black or Blue Uprights)
+      2.0m(H)*2.4m(L)*0.6m(W) ${{priceShelfBlk2_24}} (Matte Black)
+      
+      {{slfOtherSize}}
+
+  - trigger: "_generalbch"
+    replace: |-
+      2m * 0.9m * 0.6m  is ${{priceBench2m}}
+      We also have 1.2m and 1.5m wide Workbench.
+      Wheels are ${{priceBenchWheels}}/set.
+
+  - trigger: "_listBench"
+    replace: |-
+      2.0m Wide ${{priceBench2m}}
+      2.0m Wide Enhanced ${{priceBench2m_eh}}
+      2.0m Wide Commercial ${{priceBench2m_hd}} (Orange Levels)
+      1.5m Wide ${{priceBench1_5m}}
+      Bench Wheels ${{priceBenchWheels}}
+
+      1.2m Wide ${{priceBench1_2m}}* (Pre-Order required, Wheels not applicable)
+
+
+  - trigger: "_listShelfHorizontal"
+    replace: |-
+      2.0m Wide Standard HD: 200kg/level, Matte Black or Grey
+      1.5m Wide Standard HD: 200kg/level, Matte black
+      2.0m Wide Enhanced HD: 200kg/level, Matte Black
+      2.0m Wide Commerical: 300kg/level, Orange
+      2.4m Wide Commercial: 300kg/level, Matte Black
+
+  - trigger: "_listShelfVertical"
+    replace: |-
+      2.0m High: Matte Black, Grey or Blue
+      1.8m High: Matte Black
+      2.4m High: Matte Black (Available from 25/04)
+      0.9m High Workbench: Matte Black (2 Levels, Castors Avaialble)
+
+
+  # No Longer in Use
+
+  - trigger: "_listShelfstd"
+    replace: |-
+      2.0m(H)*2.0m(L)*0.6m(W) ${{priceShelfBlk2_2}} (Also available in Light Grey)
+      2.0m(H)*1.5m(L)*0.6m(W) ${{priceShelfBlk2_15}} 
+      1.8m(H)*2.0m(L)*0.6m(W) ${{priceShelfBlk18_2}}
+      1.8m(H)*1.5m(L)*0.6m(W) ${{priceShelfBlk18_15}}
+
+      Extra Levels ${{priceLevelBlk2m}}
+
+      2.4m Hight shelves will be available Later Next week:
+      2.4m(H)*2.0m(L)*0.6m(W) ${{priceShelfBlk24_2}}
+      2.4m(H)*1.5m(L)*0.6m(W) ${{priceShelfBlk24_15}}
+  
+  - trigger: "_listShelfhd"
+    replace: |-
+      2.0m(H)*2.0m(L)*0.6m(W) (Enhanced Plate) ${{priceShelfBlk2_2_EH}}
+      2.0m(H)*2.0m(L)*0.6m(W) (300kg/Level, Blue & Orange) ${{priceShelfBluOrgHD}}
+      2.0m(H)*2.4m(L)*0.6m(W) (300kg/Level) ${{priceShelfBlk2_24}}
+
+  
+
+
+
+      
+      

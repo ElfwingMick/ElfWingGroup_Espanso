@@ -1,0 +1,5 @@
+global_vars:
+  - name: "priceYA0305"
+    type: echo
+    params:
+      echo: "195"

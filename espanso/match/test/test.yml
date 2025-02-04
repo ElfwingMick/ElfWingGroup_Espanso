@@ -1,0 +1,29 @@
+global_vars:
+
+
+matches:
+  - trigger: "hiworld "
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - python3
+            - "%CONFIG%/script/test.py"
+
+  - trigger: "`ver "
+    replace: "test text"
+
+  - trigger: :"testnew "
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: espanso match exec -t :image1
+
+  - trigger: :"image1 "
+    replace: |-
+      some text
+      some more text

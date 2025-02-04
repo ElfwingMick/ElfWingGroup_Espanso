@@ -1,0 +1,49 @@
+matches:
+
+  - regex: "`csace(?P<name>.*)\\."
+    replace: |-
+      Hi, {{name}}, this is Andrew from Elf Wing, you placed an order with us on eBay.
+
+      Due to shipping and supplier reasons, we are currently switching A&C paper to C&S papers of the same quality, size and price. So we would be shipping C&S paper products to you instead for your order.
+
+      We are just confirming with you to see if thats all clear with you.
+
+      Thank you, 
+      Elf Wing
+
+  - trigger: "xeroexportlink "
+    replace: "https://go.xero.com/AccountsReceivable/Search.aspx?graphSearch=False&invoiceRef=INV&ref=INV&toSearch=INV&startDate={{startDate}}&endDate={{endDate}}&dateWithin=any&pageSize=100&orderBy=DueDate&unsentOnly=False&includeDeletedAndVoid=true"
+    vars:
+      - name: startDate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+          offset: -3456000
+
+      - name: endDate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+          offset: 6912000
+
+  - regex: "cds(?P<myvar>.*) "
+    replace: "{{feeCalculateResult_windows}}"
+    vars:
+      - name: feeCalculateResult_windows
+        type: script
+        params:
+          args:
+            - python
+            - "%CONFIG%/script/cardSurcharge.py"
+  
+  - trigger: "siji"
+    replace: |-
+      您好，麻烦发一下详细信息：
+      * 姓名
+      * 年龄
+      * 驾照信息&驾龄
+      * 签证情况
+      * 叉车情况
+      
+      之后会有人电话联系您，谢谢。
+    word: true

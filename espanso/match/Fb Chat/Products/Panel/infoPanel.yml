@@ -1,0 +1,5 @@
+global_vars:
+  - name: "DES_AluAssories"
+    type: "echo"
+    params:
+      echo: "We also have Aluminum U Channels & Angles Available."

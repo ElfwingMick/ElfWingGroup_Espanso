@@ -1,0 +1,29 @@
+global_vars:
+  # Office Desks
+  - name: "priceDeskL"
+    type: "echo"
+    params:
+      echo: "549"
+
+  - name: "priceDeskN"
+    type: "echo"
+    params:
+      echo: "449"
+
+  # Sofa
+  - name: "priceSofaS"
+    type: "echo"
+    params:
+      echo: "200"
+
+  # Office Chair
+  - name: "priceOfficeChair01"
+    type: "echo"
+    params:
+      echo: "170"
+
+  # Dinner Table
+  - name: "priceDinnerTable"
+    type: "echo"
+    params:
+      echo: "999"

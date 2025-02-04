@@ -1,0 +1,30 @@
+matches:
+  - trigger: "wcmdsk "
+    replace: |-
+      We have a range of L shaped Desks that are 1.8 wide, and 1.6m long for the side table. Perfect for any workspace in offices or homes.
+
+      On Sale price right now for just ${{priceDeskL}}! (or ${{priceDeskN}} for Stright Office Desks)
+
+      Display models are available at our warehouse.
+
+      {{addressTextFull}}
+
+      {{deliveryTextSyd}}
+
+  - trigger: "wcmsofa "
+    replace: |-
+      We have Yellow and Blue Color available.
+      Please let me know which one you are after.
+
+      Display models are available at our warehouse.
+
+      {{addressTextFull}}
+
+      {{deliveryTextSyd}}
+      
+  - trigger: "dsklrtn "
+    replace: |-
+      Most of our desks are fixed to have right returns.
+
+      For left return you can get the MGA-08 model, where the side table is ON WHEELS, and can be moved to left or right.
+

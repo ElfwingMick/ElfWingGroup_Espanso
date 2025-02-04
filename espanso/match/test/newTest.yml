@@ -1,0 +1,22 @@
+global_var: 
+  - name: test_string
+    type: echo
+    params: 
+      echo: test_value
+  - name: test_number
+    type: echo
+    params: 
+      echo: 123
+matches: 
+  - trigger: test_trigger
+    replace: test_replace
+    word: true
+  - trigger: test_replace_multi
+    replace: "first\x20line\x0Asecond\x20line"
+    word: true
+  - trigger: test_image
+    image_path: test_image_path
+    word: true
+  - regex: test_regex
+    replace: test_regex
+    word: true

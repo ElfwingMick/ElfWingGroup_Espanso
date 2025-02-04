@@ -1,0 +1,148 @@
+global_vars:
+  # Basic Price
+  - name: "priceShelf2mH"
+    type: "echo"
+    params:
+      echo: "169"
+
+  - name: "priceShelf2mH_EH"
+    type: "echo"
+    params:
+      echo: "200"
+
+  - name: "priceShelf1_8mH"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2mH}}"
+
+  - name: "priceShelf2_4mH"
+    type: "echo"
+    params:
+      echo: "200"
+
+  - name: "priceShelf300Kg"
+    type: "echo"
+    params:
+      echo: "239"
+
+  - name: "priceShelf2_4L"
+    type: "echo"
+    params:
+      echo: "320"
+
+  - name: "priceLevel200Kg"
+    type: "echo"
+    params:
+      echo: "40"
+
+  # Black Shelves
+  - name: "priceShelfBlk2_2"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2mH}}"
+
+  - name: "priceShelfBlk2_2_EH"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2mH_EH}}"
+
+  - name: "priceShelfBlk2_15"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2mH}}"
+
+  - name: "priceShelfBlk18_2"
+    type: "echo"
+    params:
+      echo: "{{priceShelf1_8mH}}"
+
+  - name: "priceShelfBlk18_15"
+    type: "echo"
+    params:
+      echo: "{{priceShelf1_8mH}}"
+
+  - name: "priceShelfBlk24_2"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2_4mH}}"
+
+  - name: "priceShelfBlk24_15"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2_4mH}}"
+
+  - name: "priceShelfBlk2_24"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2_4L}}"
+
+  # Grey Shelves
+  - name: "priceShelfGrey2_2"
+    type: "echo"
+    params:
+      echo: "{{priceShelf2mH}}"
+      
+  - name: "priceShelfGreyHD"
+    type: "echo"
+    params:
+      echo: "{{priceShelf300Kg}}"
+
+  # Other Color
+
+  - name: "priceShelfBluOrgHD"
+    type: "echo"
+    params:
+      echo: "{{priceShelf300Kg}}"
+
+  # Extra Levels
+  - name: "priceLevelBlk2m"
+    type: "echo"
+    params:
+      echo: "{{priceLevel200Kg}}"
+
+  - name: "priceLevelBlk1_5m"
+    type: "echo"
+    params:
+      echo: "{{priceLevel200Kg}}"
+
+  # Workbenches
+  - name: "priceBench1_2m"
+    type: "echo"
+    params:
+      echo: "125"
+
+  - name: "priceBench1_5m"
+    type: "echo"
+    params:
+      echo: "135"
+
+  - name: "priceBench2m"
+    type: "echo"
+    params:
+      echo: "155"
+
+  - name: "priceBench2m_eh"
+    type: "echo"
+    params:
+      echo: "175"
+
+  - name: "priceBench2m_hd"
+    type: "echo"
+    params:
+      echo: "195"
+
+  - name: "priceBenchWheels"
+    type: "echo"
+    params:
+      echo: "50"
+
+  # Service
+  - name: "priceAssembleShelvesFull"
+    type: "echo"
+    params:
+      echo: "50"
+
+  - name: "priceAssembleShelvesLevel"
+    type: "echo"
+    params:
+      echo: "20"

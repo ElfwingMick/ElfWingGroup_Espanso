@@ -1,0 +1,34 @@
+matches:
+ # Show Fees START
+
+
+  - regex: "`tf(?P<myvar>.*) "
+    replace: "Total is ${{feeCalculateResult_windows}}."
+    vars:
+      - name: feeCalculateResult_windows
+        type: script
+        params:
+          args:
+            - python
+            - "%CONFIG%/script/calculate.py"
+
+  - regex: "`tdf(?P<myvar>.*) "
+    replace: "Total is ${{feeCalculateResult_windows}} including Delivery."
+    vars:
+      - name: feeCalculateResult_windows
+        type: script
+        params:
+          args:
+            - python
+            - "%CONFIG%/script/calculate.py"
+
+  - regex: "`tdaf(?P<myvar>.*) "
+    replace: "Total is ${{feeCalculateResult_windows}} including Delivery and Assembly."
+    vars:
+      - name: feeCalculateResult_windows
+        type: script
+        params:
+          args:
+            - python
+            - "%CONFIG%/script/calculate.py"
+  # END Show Fees

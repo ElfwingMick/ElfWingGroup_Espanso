@@ -1,0 +1,65 @@
+global_vars:
+  - name: "ShedSize0305"
+    type: "echo"
+    params:
+      echo: "1750x680x90, 32kg"
+
+  - name: "ShedSize0406"
+    type: "echo"
+    params:
+      echo: "1660x570x120, 42kg"
+
+  - name: "ShedSize0408"
+    type: "echo"
+    params:
+      echo: "1660x570x120, 50kg"
+
+  - name: "ShedSize0608_1"
+    type: "echo"
+    params:
+      echo: "1670x580x130, 30kg"
+
+  - name: "ShedSize0608_2"
+    type: "echo"
+    params:
+      echo: "1670x500x80, 41kg"
+
+  - name: "ShedSize1008_1"
+    type: "echo"
+    params:
+      echo: "1670x500x80, 41kg"
+
+  - name: "ShedSize1008_2"
+    type: "echo"
+    params:
+      echo: "1670x530x110, 37kg"
+
+  - name: "ShedSize1008_3"
+    type: "echo"
+    params:
+      echo: "1680x240x180, 23kg"
+  
+
+matches:
+
+  - trigger: "shedpup305 "
+    replace: "YA0305: {{ShedSize0305}}."
+
+  - trigger: "shedpup406 "
+    replace: "YA0406: {{ShedSize0406}}."
+
+  - trigger: "shedpup408 "
+    replace: "YA0408: {{ShedSize0408}}."
+
+  - trigger: "shedpup608 "
+    replace: |-
+      YB0608, 2 boxes:
+      {{ShedSize0608_1}}
+      {{ShedSize0608_2}}
+
+  - trigger: "shedpup108 "
+    replace: |-
+      YB1008, 3 boxes:
+      {{ShedSize1008_1}}
+      {{ShedSize1008_2}}
+      {{ShedSize1008_2}}

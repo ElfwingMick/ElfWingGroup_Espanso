@@ -1,0 +1,7 @@
+global_vars:
+
+  - name: "holidayOpenToday"
+    type: "echo"
+    # 记得如果这里要显示今天开门，前面加空格
+    params:
+      echo: "." 

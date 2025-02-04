@@ -1,0 +1,6 @@
+global_vars:
+
+matches:
+ # Show Fees START
+  - regex: "`df(?P<dFee>.*) "
+    replace: "Delivery fee to your area is ${{dFee}}."

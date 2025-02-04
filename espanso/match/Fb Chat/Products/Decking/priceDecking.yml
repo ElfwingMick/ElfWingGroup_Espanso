@@ -1,0 +1,26 @@
+global_vars:
+  # Decking Boards
+  - name: "priceDeckingPerBoard"
+    type: "echo"
+    params:
+      echo: "54"
+
+  - name: "priceDeckingPerLM"
+    type: "echo"
+    params:
+      echo: "10"
+
+  - name: "priceDeckingClip"
+    type: "echo"
+    params:
+      echo: "10"
+
+  - name: "priceDeckingClipStart"
+    type: "echo"
+    params:
+      echo: "15"
+
+  - name: "priceDeckingAngle"
+    type: echo
+    params:
+      echo: "35"

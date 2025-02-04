@@ -1,0 +1,66 @@
+global_vars:
+  # EPS Wall Panels
+  - name: "priceWpPerSqm"
+    type: "echo"
+    params:
+      echo: "30"
+
+  - name: "priceRpPerSqm"
+    type: "echo"
+    params:
+      echo: "40"  
+
+  - name: "priceWp5024"
+    type: "echo"
+    params:
+      echo: "92"
+
+  - name: "priceWp5027"
+    type: "echo"
+    params:
+      echo: "103"
+
+  - name: "priceWp5030"
+    type: "echo"
+    params:
+      echo: "114"
+
+  - name: "priceRp5030"
+    type: "echo" 
+    params:
+      echo: "126"
+
+  - name: "priceRp5035"
+    type: "echo"
+    params:
+      echo: "147"
+
+  - name: "priceRp5038"
+    type: "echo"
+    params:
+      echo: "159"
+  
+  - name: "priceRp5042"
+    type: "echo"
+    params:
+      echo: "176"
+
+  - name: "priceUChannel50"
+    type: "echo"
+    params:
+      echo: "65"
+
+  - name: "priceAngle5025"
+    type: "echo"
+    params:
+      echo: "41"
+
+  - name: "priceAngle2525"
+    type: "echo"
+    params:
+      echo: "31"
+
+  - name: "priceAngle7040"
+    type: "echo"
+    params:
+      echo: "51"

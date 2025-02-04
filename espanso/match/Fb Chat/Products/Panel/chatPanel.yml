@@ -1,0 +1,204 @@
+global_vars:
+  - name: "List_WallPanel"
+    type: "match"
+    params:
+      trigger: "listplw "
+  
+  - name: "List_RoofPanel"
+    type: "match"
+    params:
+      trigger: "listplr "
+
+  - name: "List_Panel"
+    type: "match"
+    params:
+      trigger: "listpl "
+
+matches:
+  # Welcome Text START
+
+  # Decking Boards Welcome
+  - trigger: "wcmplw50 "
+    replace: |-
+      Wall panel sizes $30/sqm (ex Gst). Colour: Off-White:
+
+        Available size:
+
+        2.4m L;
+        2.7m L;
+        3.0m L;
+        6.0m L;
+
+      All WALL Panels are 1150mm wide and 50mm thick.
+
+      We also have Aluminum U Channels & Angles Available.
+
+      We have a display model here for checkout and pick-up. NO BOOKING NEEDED.
+
+      We are at U9, 202 Milperra Rd, Milperra NSW 2214. Mon-Sat 9:00am - 5.30pm. 1300591818.
+
+      Delivery available. Please let me know your order information and delivery area for a quote!
+
+  - trigger: "wcmplw75 "
+    replace: |-
+      Wall panel sizes $36/sqm (ex Gst). Colour: Off-White:
+
+        Available size:
+
+          3m L;
+
+      All WALL Panels are 1150mm wide and 75mm thick.
+
+      We also have Aluminum U Channels & Angles Available.
+
+      We have a display model here for checkout and pick-up. NO BOOKING NEEDED.
+
+      We are at U9, 202 Milperra Rd, Milperra NSW 2214. Mon-Sat 9:00am - 5.30pm. 1300591818.
+
+      Delivery available. Please let me know your order information and delivery area for a quote!
+
+  - trigger: "wcmplmr "
+    replace: |-
+      1.Off-White Roof Panels Size $40/sqm 50mm(ex Gst):
+       Avaiable size:
+        4.8m L; (75mm differdent price)
+        6.0m L; (75mm differdent price)
+
+      2.Monument and Off-White Roof Panels Size $45/sqm 50mm(ex GST):
+       Avaiable size:
+        3.0m L;
+        3.8m L;
+        4.2m L;
+        4.8m L; (75mm differdent price)
+        5.4m L; (75mm differdent price)
+        6.0m L; (75mm differdent price)
+        7.0m L; (75mm differdent price)
+
+      All ROOF Panels are 950mm wide and 50mm thick.
+
+      We also have Aluminum U Channels & Angles Available.
+
+      We have display model here for check out and pick up. NO BOOKING NEEDED.
+
+      Address: U9, 202 Milperra Rd, Milperra NSW 2214. Mon-Sat 9:00am - 17.30pm. 
+      Contact Number: 1300591818.
+      Delivery available. Please let me know your order and delivery area for a quote!
+
+  - trigger: "listplw "
+    replace: |-
+      Wall Panels Sizes ${{priceWpPerSqm}}/sqm (ex Gst):
+      2.4m L;
+      2.7m L;
+      3m L;
+      All WALL Panels are 1150mm wide and 50mm thick.
+
+  - trigger: "listplr "
+    replace: |-
+      Roof Panels Sizes ${{priceRpPerSqm}}/sqm (ex Gst):
+      3m L;
+      3.5m L;
+      3.8m L;
+      4.2mL;
+      All ROOF Panels are 950mm wide and 50mm thick.
+
+  - trigger: "listpl "
+    replace: |-
+      {{List_WallPanel}}
+
+      {{List_RoofPanel}}
+
+      Color: Off-White
+
+
+  - trigger: "wpprice24 "
+    replace: "2.4m * 1150 wall Panels are ${{priceWp5024}}/panel (inc Gst)"
+
+  - trigger: "wpprice27 "
+    replace: "2.7m * 1150  wall Panels are ${{priceWp5027}}/panel (inc Gst)"
+
+  - trigger: "wpprice30 "
+    replace: "3.0m * 1150  Wall Panels are ${{priceWp5030}}/panel (inc Gst)"
+
+  - trigger: "rpprice30 "
+    replace: "3.0m * 950  Roof Panels are ${{priceRp5030}}/panel (inc Gst)"
+
+  - trigger: "rpprice35 "
+    replace: "3.5m * 950  Roof Panels are ${{priceRp5035}}/panel (inc Gst)"
+
+  - trigger: "rpprice38 "
+    replace: "3.8m * 950  Roof Panels are ${{priceRp5038}}/panel (inc Gst)"
+
+  - trigger: "rpprice42 "
+    replace: "4.2m * 950  Roof Panels are ${{priceRp5042}}/panel (inc Gst)"
+
+  - trigger: "puc50 "
+    replace: "Aluminum U Channel for 50mm (6.5m Long) is ${{priceUChannel50}}/ea (inc Gst)"
+  
+  - trigger: "pagl50 "
+    replace: "Aluminum Angle 50*25 (6.5m Long) is ${{priceAngle5025}}/ea (inc Gst)"
+
+  - trigger: "pagl25 "
+    replace: "Aluminum Angle 25*25 (6.5m Long) is ${{priceAngle2525}}/ea (inc Gst)"
+
+  - trigger: "pagl70 "
+    replace: "Aluminum Angle 70*40 (6.5m Long) is ${{priceAngle7040}}/ea (inc Gst)"
+
+  - trigger: "pwp5024 "
+    replace: "{{priceWp5024}}"
+
+  - trigger: "pwp5027 "
+    replace: "{{priceWp5027}}"
+
+  - trigger: "pwp5030 "
+    replace: "{{priceWp5030}}"
+
+  - trigger: "prp5030 "
+    replace: "{{priceRp5030}}"
+
+  - trigger: "prp5035 "
+    replace: "{{priceRp5035}}"
+
+  - trigger: "prp5038 "
+    replace: "{{priceRp5038}}"
+
+  - trigger: "prp5042 "
+    replace: "{{priceRp5042}}"
+
+  - trigger: "wpdrp "
+    replace: "Roof panels are designed to withstand weather elements like rain and snow, often with higher insulation properties to regulate temperature. Wall panels primarily provide structural support and insulation against temperature changes. Both serve distinct functions in construction, with roof panels emphasizing weather resistance and wall panels focusing on structural integrity."
+      
+  - trigger: "wcmplr "
+    replace: |-
+      1. Off-White Roof Panels Sizes $40/sqm (ex Gst):
+
+          Available size:
+
+          3m L;
+          3.5m L;
+          3.8m L;
+          4.2m L;
+
+      2. Monument and Off-White Roof Panels Sizes $45/sqm (ex Gst):
+
+          Available size:
+          3m L;
+          4.2m L;
+          6m L (not available);
+
+      All ROOF Panels are 950mm wide and 50mm thick.
+
+      We also have Aluminum U Channels & Angles Available.
+
+      We have a display model here for checkout and pick-up. NO BOOKING NEEDED.
+
+      Address: U9, 202 Milperra Rd, Milperra NSW 2214. Open Hours: Mon-Sat 9:00am - 5.30pm. Contact Number: 1300591818.
+      Delivery available. Please let me know your order information and delivery area for a quote!
+
+  - trigger: "mrpprice30"
+    replace: "3.0m * 950  Roof Panels are $142/panel (inc Gst)"
+
+  - trigger: "mrpprice42"
+    replace: "4.2m * 950  Roof Panels are $198/panel (inc Gst)"
+
+  - trigger: "mrpprice60"
+    replace: "6.0m * 950  Roof Panels are $283/panel (inc Gst)"

@@ -1,0 +1,195 @@
+matches: 
+  - trigger: pcptw
+    image_path: $CONFIG/images/cpt/w.jpg
+    word: true
+  - trigger: pcptg
+    image_path: $CONFIG/images/cpt/g.jpg
+    word: true
+  - trigger: pcptclrchoice
+    image_path: $CONFIG/images/cpt/clrchoice.jpg
+    word: true
+  - trigger: pplr
+    image_path: $CONFIG/images/pl/r.jpg
+    word: true
+  - trigger: pplws
+    image_path: $CONFIG/images/pl/ws.jpg
+    word: true
+  - trigger: pplw
+    image_path: $CONFIG/images/pl/w.jpg
+    word: true
+  - trigger: pplalu
+    image_path: $CONFIG/images/pl/alu.png
+  - trigger: pplall
+    image_path: $CONFIG/images/pl/pplall.jpg
+    word: true
+  - trigger: pplu
+    image_path: $CONFIG/images/pl/u.jpg
+    word: true
+  - trigger: pslfextc
+    image_path: $CONFIG/images/slf/extc.png
+    word: true
+  - trigger: pslfext
+    image_path: $CONFIG/images/slf/ext.png
+    word: true
+  - trigger: pslfsc
+    image_path: $CONFIG/images/slf/sc.png
+    word: true
+  - trigger: pslfinsts
+    image_path: $CONFIG/images/slf/insts.png
+    word: true
+  - trigger: pslfinst
+    image_path: $CONFIG/images/slf/inst.png
+    word: true
+  - trigger: pslfg
+    image_path: $CONFIG/images/slf/shelving-g.png
+    word: true
+  - trigger: pslfb
+    image_path: $CONFIG/images/slf/shelving-b.png
+    word: true
+  - trigger: pslflist
+    image_path: $CONFIG/images/slf/list.png
+    word: true
+  - trigger: pbchinst
+    image_path: $CONFIG/images/bch/inst.png
+    word: true
+  - trigger: pbchwhl
+    image_path: $CONFIG/images/bch/whl.jpg
+    word: true
+  - trigger: pbchbw
+    image_path: $CONFIG/images/bch/bw.jpg
+    word: true
+  - trigger: pbchb
+    image_path: $CONFIG/images/bch/b.jpg
+    word: true
+  - trigger: pdsk8
+    image_path: $CONFIG/images/dsk/8.png
+    word: true
+  - trigger: pdsk7
+    image_path: $CONFIG/images/dsk/7.png
+    word: true
+  - trigger: pdsk5
+    image_path: $CONFIG/images/dsk/5.png
+    word: true
+  - trigger: pdsk6
+    image_path: $CONFIG/images/dsk/6.png
+    word: true
+  - trigger: pdsk4
+    image_path: $CONFIG/images/dsk/4.png
+    word: true
+  - trigger: pdsk3
+    image_path: $CONFIG/images/dsk/3.png
+    word: true
+  - trigger: pdsk1
+    image_path: $CONFIG/images/dsk/1.png
+    word: true
+  - trigger: pdsklist
+    image_path: $CONFIG/images/dsk/list.png
+    word: true
+  - trigger: pshed108
+    image_path: $CONFIG/images/shed/108.jpg
+    word: true
+  - trigger: pshed608
+    image_path: $CONFIG/images/shed/608.png
+    word: true
+  - trigger: pshed408
+    image_path: $CONFIG/images/shed/408.png
+    word: true
+  - trigger: pshed406
+    image_path: $CONFIG/images/shed/406.png
+    word: true
+  - trigger: pshed305
+    image_path: $CONFIG/images/shed/305.png
+    word: true
+  - trigger: pshed303
+    image_path: $CONFIG/images/shed/303.png
+    word: true
+  - trigger: pshedlist
+    image_path: $CONFIG/images/shed/list.png
+    word: true
+  - trigger: pdkagl
+    image_path: $CONFIG/images/dk/agl.jpg
+    word: true
+  - trigger: pdkclr
+    image_path: $CONFIG/images/dk/clr.png
+    word: true
+  - trigger: pdkclp
+    image_path: $CONFIG/images/dk/clp.jpg
+    word: true
+  - trigger: pdkdtljm
+    image_path: $CONFIG/images/dk/dtl/DeckingJM.jpg
+    word: true
+  - trigger: pdkdtlcc
+    image_path: $CONFIG/images/dk/dtl/cc.jpg
+    word: true
+  - trigger: pdkdtlps
+    image_path: $CONFIG/images/dk/dtl/ps.jpg
+    word: true
+  - trigger: pdkclrs
+    image_path: $CONFIG/images/dk/clr/s.png
+    word: true
+  - trigger: pdkclrp
+    image_path: $CONFIG/images/dk/clr/p.jpg
+    word: true
+  - trigger: pdkclrch
+    image_path: $CONFIG/images/dk/clr/ch.jpg
+    word: true
+  - trigger: pdkclrca
+    image_path: $CONFIG/images/dk/clr/ca.jpg
+    word: true
+  - trigger: psofab
+    image_path: $CONFIG/images/sofa/b.jpg
+    word: true
+  - trigger: psofay
+    image_path: $CONFIG/images/sofa/y.jpg
+    word: true
+  - trigger: pcdgclr
+    image_path: $CONFIG/images/cdg/clr.png
+    word: true
+  - trigger: pcdgcnr
+    image_path: $CONFIG/images/cdg/cnr.jpg
+    word: true
+  - trigger: pcdginst
+    image_path: $CONFIG/images/cdg/inst.png
+    word: true
+  - trigger: pcdgdtla
+    image_path: $CONFIG/images/cdg/dtl/a.jpg
+    word: true
+  - trigger: pcdgdtlw
+    image_path: $CONFIG/images/cdg/dtl/w.jpg
+    word: true
+  - trigger: pcdgdtlt
+    image_path: $CONFIG/images/cdg/dtl/t.jpg
+    word: true
+  - trigger: pcdgdtlg
+    image_path: $CONFIG/images/cdg/dtl/g.jpg
+    word: true
+  - trigger: pcdgdtle
+    image_path: $CONFIG/images/cdg/dtl/e.jpg
+    word: true
+  - trigger: pcdgdtlb
+    image_path: $CONFIG/images/cdg/dtl/b.jpg
+    word: true
+  - trigger: pcdgdtls
+    image_path: $CONFIG/images/cdg/dtl/t.jpg
+    word: true
+  - trigger: pcdgclrt
+    image_path: $CONFIG/images/cdg/clr/t.jpg
+    word: true
+  - trigger: pcdgclrs
+    image_path: $CONFIG/images/cdg/clr/t.jpg
+    word: true
+  - trigger: pcdgclrw
+    image_path: $CONFIG/images/cdg/clr/w.jpg
+    word: true
+  - trigger: pcdgclrg
+    image_path: $CONFIG/images/cdg/clr/g.jpg
+    word: true
+  - trigger: pcdgclre
+    image_path: $CONFIG/images/cdg/clr/e.jpg
+    word: true
+  - trigger: pcdgclrb
+    image_path: $CONFIG/images/cdg/clr/b.jpg
+    word: true
+  - trigger: pcpt
+    image_path: $CONFIG/images/cpt/carpot_size.jpg
+    word: true

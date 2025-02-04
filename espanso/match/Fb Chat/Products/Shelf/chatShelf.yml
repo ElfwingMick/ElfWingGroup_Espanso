@@ -1,0 +1,182 @@
+matches:
+  # Welcome Text START
+
+  - trigger: "avaslfb "
+    replace: |-
+      The 2m*2m Shelf is currently only available in Light Grey Color due to port strike.
+      Matte black 2m shelf will be back in stock next week.
+
+  # black shelves welcome
+  - trigger: "wcmslf "
+    replace: |-
+      Hi,
+
+      Product Specifications
+      1.8m (H) x 2m (L) x 0.6m (D) – $169
+      2m (H) x 2m (L) x 0.6m (D) – $169
+      2.4m (H) x 2m (L) x 0.6m (D) – $200
+
+      Additional Options
+      Length Options: 1.5m / 2m / 2.4m (or longer with extensions)
+      Height Options: 1.8m / 2m / 2.4m
+
+      Heavy-Duty Beam Capacity:
+      300Kg per level (2m / 2.4m wide)
+      Available only in orange color
+      Workbench Height: 0.9m (with available lengths: 1.2m / 1.5m / 2m / 2.4m)
+      Expandable: Extra levels can be added for additional storage.
+
+      Store Information
+      Address:
+      -U9, 202 Milperra Rd, Milperra NSW 2214
+      Open Hours:
+      Monday to Saturday, 9:00 am – 5:30 pm
+      Contact Number:
+      -1300 591 818
+
+      Delivery Service
+      Delivery is available! Please share your order details and delivery location, and we’ll provide you with a quote.
+      
+      Thanks!
+
+  - trigger: "wcmslfw "
+    replace: |-
+      Hi,
+
+      Product Specifications
+      1.8m (H) x 2m (L) x 0.6m (D) – $169
+      2m (H) x 2m (L) x 0.6m (D) – $169
+      2.4m (H) x 2m (L) x 0.6m (D) – $200
+
+      Additional Options
+      Length Options: 1.5m / 2m / 2.4m (or longer with extensions)
+      Height Options: 1.8m / 2m / 2.4m
+
+      Heavy-Duty Beam Capacity:
+      300Kg per level (2m / 2.4m wide)
+      Available only in orange color
+      Workbench Height: 0.9m (with available lengths: 1.2m / 1.5m / 2m / 2.4m)
+      Expandable: Extra levels can be added for additional storage.
+
+      Store Information
+      Address:
+      -U9, 202 Milperra Rd, Milperra NSW 2214
+      Open Hours:
+      Monday to Saturday, 9:00 am – 5:30 pm
+      Contact Number:
+      -1300 591 818
+
+      Delivery Service(Wollongong Matro Area)
+      Flat Delivery Fee: $20
+      Please let us know:
+      The number of sets you’d like to order
+      The delivery address
+      Delivery is available to other areas as well! Share your location and order details, and we’ll provide a customized quote.
+
+      Thanks!
+
+  - trigger: "wcmslfbwoll "
+    replace: |-
+      {{generalShelfBlack}}
+
+      {{deliveryTextWoll}}
+
+      {{addressTextFull}}
+
+  # black shelves welcome
+  - trigger: "wcmslfc "
+    replace: |-
+      {{generalShelfCommercial}}
+
+      {{addressTextFull}}
+
+      {{deliveryTextSyd}}
+
+  - trigger: "wcmslfcwoll "
+    replace: |-
+      {{generalShelfCommercial}}
+
+      {{deliveryTextWoll}}
+
+      {{addressTextFull}}
+
+    # Grey shelves welcome
+  - trigger: "wcmslfg "
+    replace: |-
+      {{generalShelfGrey}}
+
+      {{addressTextFull}}
+
+      {{deliveryTextSyd}}
+
+  # black shelves welcome wollongong
+
+  - trigger: "wcmslfgwoll "
+    replace: |-
+      {{generalShelfGrey}}
+
+      {{deliveryTextWoll}}
+
+      {{addressTextFull}}
+
+  # All Shelves ($125) welcome Sydney
+  - trigger: "wcmslfa "
+    replace: |-
+      Workbenches 1.2m-2m wide, $125-155
+      Shelves 2m*2m $169, other sizes available.
+
+      {{slfOtherSize}}
+
+      {{addressTextFull}}
+
+      Please let me know what size you are after and where deliver to. I will get back to you with a quote.
+
+  # Workbench Welcome Sydney
+  - trigger: "wcmbch "
+    replace: |-
+      {{listBench_f}}
+
+      {{addressTextFull}}
+
+      {{deliveryTextSyd}}
+
+  - trigger: "wcmbchwoll "
+    replace: |-
+      {{listBench_f}}
+
+      {{deliveryTextWoll}}
+
+      {{addressTextFull}} 
+
+  # END Welcome
+
+  # Price List START
+  - trigger: "listslf "
+    replace: |-
+      Please let me know which Levels you need and the Size & Color of the vertaical uprights.
+
+      Horizontal Levels:
+      {{listShelfHorizontal}}
+
+      Vertical Uprights:
+      {{listShelfVertical}}
+
+      * All Shelves comes with 4 levels, extra levels can be added.
+
+  - trigger: "listbch "
+    replace: |-
+      Matte Black Work Bench
+      {{listBench}}
+
+      All work benches are 0.9m tall, 0.6m deep and 2 levels / set.
+
+  - trigger: "slfpupsize "
+    replace: |-
+      One set of Shelf comes in 4 parts. Detailed Dimensions Below:
+
+      Uprights (Long): 200*17*6cm, 7kg
+      Uprights (Short): 90*17*7cm, 3.5kg
+      Beams: 193*12*18cm, 14kg
+      Panels: 95*60*18cm, 14kg
+
+      All parts are packed and wrapped.

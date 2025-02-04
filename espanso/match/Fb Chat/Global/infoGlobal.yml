@@ -1,0 +1,20 @@
+global_vars: 
+  - name: "contactNumber"
+    type: "echo"
+    params:
+      echo: "1300591818"
+
+  - name: "contactEmail"
+    type: "echo"
+    params:
+      echo: "info@elfwinggroup.com"
+
+  - name: "warehouseAddress"
+    type: "echo"
+    params:
+      echo: "U9, 202 Milperra Rd, Milperra NSW 2214"
+
+  - name: "warehouseOpenTime"
+    type: "echo"
+    params:
+      echo: "Mon-Sat 9:00am - 17.30pm"

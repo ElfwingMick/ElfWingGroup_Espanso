@@ -1,0 +1,14 @@
+matches:
+  - trigger: "wcmcpt "
+    replace: |-
+      Carport Size: 5.5m Long, 3m Wide, 3m Tall.
+
+      Grey Aluminum Frame, dark shade top. (or White Frame + Light Grey Shade)
+
+      $2190 / set.
+
+      Display model available at our warehouse.
+
+      If you also need install, please send your contact number, address and photos of the area you wish to have carport installed after. We will get professional installer to contact with to get you a quote for the whole project. 
+
+      {{addressTextFull}}

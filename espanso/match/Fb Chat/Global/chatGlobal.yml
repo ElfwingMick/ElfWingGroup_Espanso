@@ -1,0 +1,187 @@
+global_vars: 
+
+  - name: "addressTextFull"
+    type: "echo"
+    params:
+      echo: "We are at {{warehouseAddress}}. {{warehouseOpenTime}}. {{contactNumber}}{{holidayOpenToday}}"
+
+  - name: "addressTextShort"
+    type: "echo"
+    params:
+      echo: "We are in Milperra Sydney . {{contactNumber}}"
+
+  - name: "deliveryTextSyd"
+    type: "echo"
+    params:
+      echo: "Delivery available. Please let me know your order and delivery area for a quote!"
+
+  - name: "deliveryTextWoll"
+    type: "echo"
+    params:
+      echo: "Delivery fee to Wollongong area is ${{dlvFeeWoll}} flat. Please let me know how many sets you need and where deliver to."
+
+  - name: "deliveryNotePayment"
+    type: "match"
+    params:
+      trigger: "_deliveryNotePayment"
+
+  - name: "deliveryNotePaymentTransferOnly"
+    type: "match"
+    params:
+      trigger: "_deliveryNotePaymentTransferOnly" 
+
+  - name: "deliveryNoteEta"
+    type: "match"
+    params:
+      trigger: "_deliveryNoteEta"
+
+  - name: "invoiceSentMsg"
+    type: "match"
+    params:
+      trigger: "_invoiceSent"
+
+  - name: "transferPayment"
+    type: "echo"
+    params:
+      echo: "For Bank Transfer Payments, please send payment remittance to {{contactEmail}} with invoice number as reference. Thank you"
+
+matches:
+
+  - trigger: "adrs "
+    replace: "{{addressTextFull}}"
+    
+  - trigger: "dlvtoofar "
+    replace: |-
+      Sorry this is too far for us to deliver.
+
+      We only delivery to Sydney and Wollongong areas.
+
+      {{addressTextFull}}
+
+      You may be able to pick up from our warehouse or have us deliver to an alternate address where you can orgnise delivery from that address to you.
+
+ 
+
+  # Payment Method START
+  - trigger: "paymentpup "
+    replace: "We accept Cash, Cards ({{cardSurchargePercent}}% surcharge, no AMEX) and Bank Transfer on Pick Up."
+
+  - trigger: "paymentdlv "
+    replace: "We accept Bank Transfer or Cash payments on Delivery."
+  # END Payment Method
+  
+  - trigger: "_deliveryNoteEta"
+    replace: |-
+      Delivery ETA:
+      Our driver will contact you ahead of delivery to let you know we are coming.
+
+  - trigger: "_deliveryNotePayment"
+    replace: |-
+      Payment:
+      We accept Cash on Delivery and Bank Transfer.
+
+  - trigger: "_deliveryNotePaymentTransferOnly"
+    replace: |-
+      Payment:
+      We accept payment via Bank Transfer.
+      You will find our bank details on the invoice.
+  
+  - trigger: "orderdetail "
+    replace: |-
+      To place an order, please send the following information:
+
+      * Full name / Company name
+      * Contact number
+      * Delivery address
+      * Email address
+
+      We will send an invoice to your email address ahead of delivery. The driver will contact you a day before delivery.
+
+      Payment:
+      We accept Cash on Delivery and Bank Transfers.
+
+  - trigger: "orderdetailtransfer "
+    replace: |-
+      To place an order, please send the following information:
+
+      * Full name / Company name
+      * Contact number
+      * Delivery address
+      * Email Address
+
+      We will send invoice to your email address ahead of delivery.
+
+      {{deliveryNotePaymentTransferOnly}}
+
+  - trigger: "orderdetailpup "
+    replace: |-
+      To place an order, please send the following information:
+
+      * Full name / Company name
+      * Contact number
+      * Email Address
+
+      We will send invoice to your email address.
+
+  
+
+  - trigger: "_invoiceSent"
+    replace: |-
+      Invoice have been sent.
+      Please check if the product, price and order information is correct.
+      Thank you for your purchase.
+
+      Contact:
+      For any issues regarding the order, feel free to contact us at {{contactNumber}} or {{contactEmail}}
+
+  - trigger: "invsent "
+    replace: |-
+      {{invoiceSentMsg}}
+
+      {{deliveryNoteEta}}
+
+      {{transferPayment}}
+
+  - trigger: "invsentcash "
+    replace: |-
+      {{invoiceSentMsg}}
+
+      {{deliveryNoteEta}}
+
+  - trigger: "invsentfull "
+    replace: |-
+      {{invoiceSentMsg}}
+
+      {{deliveryNoteEta}}
+
+      {{deliveryNotePayment}}
+
+      {{transferPayment}}
+
+  - trigger: "invsentpup "
+    replace: |-
+      {{invoiceSentMsg}}
+
+      {{transferPayment}}
+
+  - trigger: "hoset "
+    replace: "How many sets are you after?"
+
+  - trigger: "whdlv "
+    replace: "May I get the suburb for delivery?"
+
+  - trigger: "hosetdlv "
+    replace: "How many sets are you after and which suburb is delivery to?"
+
+  - trigger: "pfixed "
+    replace: "Sorry, Price is fixed."
+
+  - trigger: "gclose "
+    replace: "The gate maybe closed when you are here, just enter 2009# on the pad on the left, or call 1300591818, see you soon."
+
+  - trigger: "mkaspd "
+    replace: "Thank you, I will mark the order as paid."
+
+  - trigger: "dlvwoll "
+    replace: "Our driver will send you a message the evening before Delivery. He will also contact you on prior to arrival on the day."
+

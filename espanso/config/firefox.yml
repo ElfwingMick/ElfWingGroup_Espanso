@@ -1,0 +1,4 @@
+filter_exec: "Mozilla Firefox"
+
+extra_includes:
+  - "../match/Fb Chat/Global/Fee_Calculations/_windows.yml"

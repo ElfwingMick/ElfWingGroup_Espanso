@@ -1,0 +1,77 @@
+matches:
+  # Welcome Text START
+
+  # Decking Boards Welcome
+  - trigger: "wcmcdg "
+    replace: |-
+      WPC Outdoor Claddings, weather resistant, New Stock available NOW
+
+      $35 / board
+      
+      24.5mm(D) * 218mm(W) * 2.9m(H) 
+      (effective width 202mm)
+
+      5 Colours available:
+        * Black
+        * Elm
+        * Gray
+        * Straw Teak
+        * Albus White
+      
+      20 Year Warranty
+
+      {{addressTextFull}}
+      {{deliveryTextSyd}}
+
+      We have display model here for check out and pick up. NO BOOKING NEEDED.
+
+      We match the price.
+
+  # For people who need installtion
+
+  - trigger: "installcdg "
+    replace: |-
+      For installtion, please send me your:
+      * Contact Number
+      * Install Suburb / Address
+      * Estimate Install Size
+      * Photos of Install Size (If Available)
+
+      An installer will contact you to provide a quote for your project soon.
+
+  - trigger: "samplecdg "
+    replace: |-
+      If you would like us to post samples to your address, please send:
+      
+      * Estamate number of boards / install size size.
+      * Install Suburb / address.
+      * Pick up (from Milperra) or requires delivery.
+      * Prefered color(s)
+      * Full name / Company name, contact number, email address
+      * Postage address for sample.
+
+      Thank you.
+
+  - trigger: "_avacdg "
+    replace: |-
+      We are currently out of stock on Cladding.
+
+      New Stock will be available from 08 May. Pre-order is now open for delivery / pick up as soon as product is ready.
+
+      ${{priceCladdingPerBoard}} / board + GST
+
+      24.5mm(D) * 218mm(W) * 2.9m(H) 
+       
+      5 Colours available:
+        * Black
+        * Elm
+        * Gray
+        * Straw Teak
+        * White
+      
+      20 Year Warranty
+
+      {{addressTextFull}}
+      {{deliveryTextSyd}}
+
+      We have display model here for check out and pick up. NO BOOKING NEEDED.

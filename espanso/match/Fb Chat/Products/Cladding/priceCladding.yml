@@ -1,0 +1,11 @@
+global_vars:
+  # Decking Boards
+  - name: "priceCladdingPerBoard"
+    type: "echo"
+    params:
+      echo: "44"
+
+  - name: "priceCladdingCorner"
+    type: "echo"
+    params:
+      echo: "27"
